@@ -20,6 +20,7 @@ public class Test1 extends BaseTest {
 	@Test(enabled = true ,priority = 3)
 	public void sample2() {
 		Assert.assertEquals("kishor", "kishor");
+		Assert.assertFalse(true);
 	}
 	
 	@Test(enabled=true,priority = 4)
