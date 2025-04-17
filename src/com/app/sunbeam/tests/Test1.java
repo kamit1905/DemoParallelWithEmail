@@ -7,22 +7,22 @@ import com.app.sunbeam.Pages.LoginPage;
 
 public class Test1 extends BaseTest {
 	
-	@Test(enabled = true ,priority = 1)
+	@Test(enabled = true)
 	public void sample() {
 		Assert.assertEquals("amit", "amit");
 	}
 	
-	@Test(enabled = true ,priority = 2)
+	@Test(enabled = true )
 	public void sample1() {
 		Assert.assertEquals("amol", "amol");
 	}
 	
-	@Test(enabled = true ,priority = 3)
+	@Test(enabled = true)
 	public void sample2() {
 		Assert.assertEquals("kishor", "kishor");
 	}
 	
-	@Test(enabled=true,priority = 4)
+	@Test(enabled=true)
 	public void LoginTest() {
 		LoginPage login = new LoginPage();
 		login.EnterUserName("amit789@gmail.com");
