@@ -30,10 +30,10 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.2.5</version>
 				<configuration>
-<!-- 					<systemPropertyVariables>
-						<propertyName>Enterprise_R550</propertyName>
-						<propertyName>${environment}</propertyName>
-					</systemPropertyVariables> -->
+ 					<systemPropertyVariables>
+						<executionBrowser>${browserName}</executionBrowser>
+						<appUrl>${urlName}</appUrl>
+					</systemPropertyVariables>
 					<suiteXmlFiles>
 					<!-- <suiteXmlFile>smokeTestng35.xml</suiteXmlFile> -->
 						<suiteXmlFile>testng.xml</suiteXmlFile>
