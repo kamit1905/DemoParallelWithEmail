@@ -5,12 +5,12 @@ import org.testng.annotations.Test;
 
 public class Test2 extends BaseTest {
 	
-	@Test(enabled = true ,priority = 1)
+	@Test(enabled = true )
 	public void getup() {
 		Assert.assertEquals("Pune", "Pune");
 	}
 	
-	@Test(enabled = true ,priority = 2)
+	@Test(enabled = true)
 	public void getup1Test() {
 		Assert.assertEquals("Mumbai", "Mumbai");
 		Assert.assertFalse(false);
