@@ -5,13 +5,12 @@ import org.openqa.selenium.WebDriver;
 import com.app.sunbeam.Configurations.PropertyReader;
 
 public class Driver {
-	String browser;
-	String url;
+	
 	public static void initDriver() {
 		//browser= new PropertyReader().getBrowserName();
 		//url = new PropertyReader().getUrl();
-		browser !=null? System.getProperty("browserName") : new PropertyReader().getBrowserName();
-		url !=null ? System.getProperty("urlName") : new PropertyReader().getUrl();
+		browser = System.getProperty("browserName") !=null ? System.getProperty("browserName") : new PropertyReader().getBrowserName();	
+		url = System.getProperty("urlName") !=null ? System.getProperty("urlName") : new PropertyReader().getUrl(); 
 		WebDriver driver = DriverFactory.getDriver(browser);
 		DriverManager.setDriver(driver);
 		DriverManager.getDriver().manage().window().maximize();
