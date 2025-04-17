@@ -11,7 +11,9 @@ public class Driver {
 		//browser= new PropertyReader().getBrowserName();
 		//url = new PropertyReader().getUrl();
 		browser = System.getProperty("browserName") !=null ? System.getProperty("browserName") : new PropertyReader().getBrowserName();	
-		url = System.getProperty("urlName") !=null ? System.getProperty("urlName") : new PropertyReader().getUrl(); 
+		url = System.getProperty("urlName") !=null ? System.getProperty("urlName") : new PropertyReader().getUrl();
+		System.out.println("Browser ========= "+browser);
+		System.out.println("Url =========="+url);
 		WebDriver driver = DriverFactory.getDriver(browser);
 		DriverManager.setDriver(driver);
 		DriverManager.getDriver().manage().window().maximize();
