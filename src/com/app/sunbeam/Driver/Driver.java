@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import com.app.sunbeam.Configurations.PropertyReader;
 
 public class Driver {
-	
+	static String browser;
+	static String url;
 	public static void initDriver() {
 		//browser= new PropertyReader().getBrowserName();
 		//url = new PropertyReader().getUrl();
